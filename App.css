@@ -1,0 +1,398 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    width:100%;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    /* padding:70px 70px; */
+    /* padding-top:100px; */
+}
+.container{
+    height:50rem;
+    width:40rem;
+    display:flex;
+    flex:1;
+    border:10px solid grey;
+    /* margin:350px; */
+    position:relative;
+    border-radius: 10px;
+    background-size: contain;
+    background-image: url(./931291.jpg);
+    /* align-items:center; */
+}
+.keypad{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    overflow:contain;
+    height:110px;
+    width:180px;
+    position:absolute;
+    margin-top:140px;
+    padding:20px;
+    padding-top:8px;
+    border-radius:5px;
+}
+button{
+    height:5.2rem;
+    width:10rem;
+    margin:10px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    margin-left:20px;
+}
+button:hover{
+    background-color:darkcyan;
+    cursor:pointer;
+    color:white;
+    box-shadow: 3px 15px 15px grey;
+    transform: scaleX(1.1);
+    font-size: 19px;
+    /* transform: scaleY(1.2); */
+}
+input[type='text']{
+    height:7.2rem;
+    width:600px;
+    align-content: left;
+    margin-left:13px;
+    margin-top:10px;
+    border-radius: 10px;
+    text-align: right;
+    overflow:contain;
+    overflow-x:scroll ;
+    display:flex;
+    flex:auto;
+    font-size: 23px;
+    font-weight: 50;
+}
+.bigger-button{
+    background-color:yellow;
+    width: 12rem;
+    margin-right: -1px;
+}
+.smaller-button{
+background-color:green;
+}
+.smaller-butmulti {
+    background-color: red;
+}
+.smaller-butminus{ 
+    background-color: orangered;
+}
+.smaller-butdot{
+    background-color: gray;
+}
+.smaller-butdiv {
+    background-color: fuchsia;
+}
+@media (max-width: 980px), (max-height:1080px) {
+.container {
+        height: 53rem;
+        width: 50rem;
+        display: flex;
+        flex: 1;
+        border: 10px solid grey;
+        /* margin:350px; */
+        position: relative;
+        border-radius: 10px;
+        background-size: contain;
+        background-image: url(./931291.jpg);
+        /* align-items:center; */
+    }
+
+    .keypad {
+        /* margin-bottom: 0px; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: contain;
+        height: 200px;
+        width: 180px;
+        position: absolute;
+        margin-top: 180px;
+        padding: 60px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 5.2rem;
+        width: 14rem;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: cornsilk;
+        margin-left: 0px;
+    }
+
+    button:hover {
+        background-color: darkcyan;
+        cursor: pointer;
+        color: white;
+        box-shadow: 3px 15px 15px grey;
+        transform: scaleX(1.1);
+        font-size: 19px;
+        /* transform: scaleY(1.2); */
+    }
+
+    input[type='text'] {
+        height: 10rem;
+        width: 760px;
+        align-content: left;
+        margin-left: 13px;
+        margin-top: 10px;
+        border-radius: 10px;
+        text-align: right;
+        overflow: contain;
+        overflow-x: scroll;
+        display: flex;
+        flex: auto;
+        font-size: 60px;
+        font-weight: 50;
+    }
+
+    .bigger-button {
+        background-color: yellow;
+        width: 15rem;
+        margin-right: -1px;
+    }
+
+    .smaller-button {
+        background-color: green;
+    }
+
+    .smaller-butmulti {
+        background-color: red;
+    }
+
+    .smaller-butminus {
+        background-color: orangered;
+    }
+
+    .smaller-butdot {
+        background-color: gray;
+    }
+
+    .smaller-butdiv {
+        background-color: fuchsia;
+    }
+}
+
+@media (max-width: 480px), (max-height:720px) {
+.container {
+        height: 50rem;
+        width: 40rem;
+        display: flex;
+        flex: 1;
+        border: 10px solid grey;
+        /* margin:350px; */
+        position: relative;
+        border-radius: 10px;
+        background-size: contain;
+        background-image: url(./931291.jpg);
+        /* align-items:center; */
+    }
+
+    .keypad {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: contain;
+        height: 110px;
+        width: 180px;
+        position: absolute;
+        margin-top: 140px;
+        padding: 20px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 5.2rem;
+        width: 10rem;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: cornsilk;
+        margin-left: 20px;
+    }
+
+    button:hover {
+        background-color: darkcyan;
+        cursor: pointer;
+        color: white;
+        box-shadow: 3px 15px 15px grey;
+        transform: scaleX(1.1);
+        font-size: 19px;
+        /* transform: scaleY(1.2); */
+    }
+
+    input[type='text'] {
+        height: 7.2rem;
+        width: 600px;
+        align-content: left;
+        margin-left: 13px;
+        margin-top: 10px;
+        border-radius: 10px;
+        text-align: right;
+        overflow: contain;
+        overflow-x: scroll;
+        display: flex;
+        flex: auto;
+        font-size: 23px;
+        font-weight: 50;
+    }
+
+    .bigger-button {
+        background-color: yellow;
+        width: 12rem;
+        margin-right: -1px;
+    }
+
+    .smaller-button {
+        background-color: green;
+    }
+
+    .smaller-butmulti {
+        background-color: red;
+    }
+
+    .smaller-butminus {
+        background-color: orangered;
+    }
+
+    .smaller-butdot {
+        background-color: gray;
+    }
+
+    .smaller-butdiv {
+        background-color: fuchsia;
+    }
+}
+@media (max-width: 240px), (max-height:480px){
+.container {
+        height: 27rem;
+        width: 17rem;
+        display: flex;
+        flex: 1;
+        border: 10px solid grey;
+        /* margin:350px; */
+        position: relative;
+        border-radius: 10px;
+        background-size: contain;
+        background-image: url(./maths.jpg);
+        /* align-items:center; */
+    }
+    /* #nine{
+        margin-right:10px;
+    } */
+    /* #dot, #clear{
+        margin-left: px;
+    } */
+
+    .keypad {
+        /* margin-bottom: 0px; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: contain;
+        height: 40px;
+        width: 250px;
+        position: absolute;
+        margin-top: 70px;
+        padding: 60px;
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    button {
+        height: 2.5rem;
+        width: 5rem;
+        margin-top:10px;
+        margin-button: 10px;
+        border-radius: 10px;
+        background-color: cornsilk;
+        margin-left: -40px;
+        margin-right:-5px;
+        border-spacing: 5px;
+    }
+
+    button:hover {
+        background-color: darkcyan;
+        cursor: pointer;
+        color: white;
+        box-shadow: 3px 15px 15px grey;
+        transform: scaleX(1.1);
+        font-size: 19px;
+        /* transform: scaleY(1.2); */
+    }
+
+    input[type='text'] {
+        height: 4rem;
+        width: 260px;
+        align-content: left;
+        margin-left: 13px;
+        margin-top: 10px;
+        border-radius: 10px;
+        text-align: right;
+        overflow: contain;
+        overflow-x: scroll;
+        display: flex;
+        margin-left:3px;
+        flex: auto;
+        font-size: 40px;
+        font-weight: 50;
+    }
+
+    .bigger-button {
+        background-color: yellow;
+        width: 5rem;
+        /* margin-right: -1px; */
+    }
+
+    .smaller-button {
+        background-color: green;
+        width: 4.5rem;
+    }
+
+    .smaller-butmulti {
+        background-color: red;
+        width: 4.5rem;
+    }
+
+    .smaller-butminus {
+        background-color: orangered;
+        width: 4.5rem;
+    }
+
+    .smaller-butdot {
+        background-color: gray;
+        width: 4.5rem;
+    }
+
+    .smaller-butdiv {
+        background-color: fuchsia;
+        width: 4.5rem;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+
+    }
+.smaller-button {
+        background-color: green;
+    }
+
+    .smaller-butmulti {
+        background-color: red;
+    }
+
+    .smaller-butminus {
+        background-color: orangered;
+    }
+
+    .smaller-butdot {
+        background-color: gray;
+    }
+
+    .smaller-butdiv {
+        background-color: fuchsia;
+    }
+}
